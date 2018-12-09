@@ -1,0 +1,206 @@
+<resources>
+    <string name="app_name">看门狗</string>
+    <string name="login">登录</string>
+    <string name="register">注册账号</string>
+    <string name="findpwd">找回密码</string>
+    <string name="forgetpwd">忘记密码</string>
+    <string name="forgetpwdtips">忘记密码?</string>
+    <string name="tips_register">还没有账号，立即注册</string>
+    <string name="tips_account_hint">请输入手机号</string>
+    <!--或邮箱-->
+    <string name="tips_pwd_hint">请输入密码</string>
+    <string name="tips_newpwd_hint">请输入新密码</string>
+    <string name="tips_vercode_hint">请输入验证码</string>
+    <string name="itps_inputpwd_again">请在次输入密码</string>
+    <string name="resetpwd">重置密码</string>
+    <string name="reset">重置</string>
+    <string name="password">密码</string>
+    <string name="sure">确定</string>
+    <string name="send">发送</string>
+    <string name="sendmsg">短信发送</string>
+    <string name="offlinedelete">离线删除</string>
+    <string name="connectdelete">连接删除</string>
+    <string name="getcode">获取</string>
+    <string name="reget">重新获取</string>
+    <string name="tips_addcompany">请先添加公司，再进行其他操作</string>
+    <string name="prompt_forgettips">点击确定,表示您同意丁盯</string>
+    <string name="servicecontrol">《服务协议》</string>
+    <string name="servicecontroltitle">服务协议</string>
+    <string name="mydevicetitle">我的设备</string>
+    <string name="account">账号</string>
+    <string name="submit">提交</string>
+
+    <string name="tips_login_account_null">账号不能为空</string>
+    <string name="tips_login_password_null">密码不能为空</string>
+    <string name="tips_loginsocket_failed">连接服务器失败!</string>
+    <string name="tips_addmembername_null">用户名不能为空</string>
+    <string name="tips_nointernet">当前网络断开，请查看手机网络</string>
+    <string name="tips_exithousetips">该时间段已入住，请先退房</string>
+    <string name="tips_toseeandeditmsg">查看并编辑个人资料</string>
+
+    <string name="tips_phont_null">手机号不能为空</string>
+    <string name="tips_yan_null">验证不能为空</string>
+    <string name="tips_shibie_null">识别码不能为空</string>
+    <string name="tips_password_no_equire">密码不一致</string>
+    <string name="tips_password_length">请设置密码长度6到32</string>
+    <string name="tips_account_format_error">手机格式不正确</string>
+    <string name="tips_search_hint_input">请输入要搜索的内容</string>
+
+    <string name="tips_login_error">账号或用户名错误</string>
+    <string name="tips_account_exits">账号已经存在</string>
+    <string name="tips_login_loading">正在登录请稍后...</string>
+    <string name="tips_register_loading">正在注册中...</string>
+    <string name="tips_modifypwd_sucess">修改密码成功</string>
+    <string name="tips_modifypwd_failed">修改密码失败</string>
+    <string name="tips_modifynick_success">修改昵称成功</string>
+    <string name="tips_modifynick_failed">修改昵称失败</string>
+    <string name="tips_oldpwd_noempty">旧密码不能为空</string>
+    <string name="tips_newpwd_noempty">新密码不能为空</string>
+    <string name="tips_load_message">正在获取数据</string>
+    <string name="tips_submit_data">正在提交数据...</string>
+    <string name="tips_login_failed">账号或密码错误</string>
+    <string name="tips_register_success_to_login">注册成功</string>
+    <string name="tips_register_failed_to_login">注册失败</string>
+
+    <string name="tips_inputoldpwd">请输入旧密码</string>
+    <string name="tips_password_format">密码必须是6-20位数字或英文字母</string>
+    <string name="tips_password_hint">6-20位数字或英文字母</string>
+    <string name="tips_password_noequre">密码不一致，请重新输入</string>
+    <string name="logintips">Hello,\n看门犬欢迎您!</string>
+    <string name="registertips">Hello,\n欢迎注册看门犬!</string>
+    <string name="tips_inputnickname">请输入昵称</string>
+    <string name="tips_inputbarnchname">请输入分组名称</string>
+    <string name="branchname">分组名称</string>
+    <string name="tips_delete_success">删除成功</string>
+    <string name="tips_delete_failed">删除失败</string>
+    <string name="tips_add_success">添加成功</string>
+    <string name="tips_add_failed">添加失败</string>
+    <string name="tips_seehousepwd_length">看房密码到达上限，请删除不需要的看房密码！</string>
+    <string name="tips_auth_timemout">授权已过期</string>
+    <string name="tips_auth_success">授权成功</string>
+    <string name="tips_auth_failed">授权失败</string>
+    <string name="tips_getoffline_failed">获取离线密码失败</string>
+    <string name="tips_modify_success">修改成功</string>
+    <string name="tips_modify_failed">修改失败</string>
+    <string name="tips_inputbranchname">请输入组名</string>
+
+    <string name="lock">智慧门锁</string>
+    <string name="blelocklist">锁列表</string>
+    <string name="set">设置</string>
+    <string name="mydevice">我的设备</string>
+    <string name="persioninfo">个人信息</string>
+    <string name="add">添加</string>
+    <string name="cancel">取消</string>
+    <string name="tips_exit">确认要退出?</string>
+    <string name="tips_toreadcard">确定已将卡片放到设备上</string>
+    <string name="tips_successtitle">发送短信</string>
+    <string name="tips_allpwd">您好，您的密码是: </string>
+    <string name="tips_allpwd2">输入密码后，按锁键盘右下角键结束</string>
+    <string name="tips_seehousepwd">您好，您的看房密码是: </string>
+    <string name="tips_seehousepwd2">温馨提示:您的看房密码有效时长为1个小时</string>
+    <string name="tips_seehouse">以短信形式发送看房密码</string>
+    <string name="fendian">分组管理</string>
+    <string name="minebranch">我的分组</string>
+    <string name="exit">退出登录</string>
+    <string name="nickname">昵称</string>
+    <string name="modifypwd">修改密码</string>
+    <string name="modifynick">修改昵称</string>
+    <string name="oldpwd">旧密码：</string>
+    <string name="newpwd">新密码：</string>
+    <string name="renote">重命名</string>
+    <string name="delete">删除</string>
+    <string name="icCard">IC卡</string>
+    <string name="tips_inputname">请输入名称</string>
+    <string name="tips_inputsn">请输入序列号</string>
+    <string name="setvaildtime">设置有效期</string>
+    <string name="alltime">永久</string>
+    <string name="starttime">开始时间</string>
+    <string name="endtime">结束时间</string>
+    <string name="wifiname">名称</string>
+    <string name="addcard">添加IC卡</string>
+    <string name="editcard">编辑IC卡</string>
+    <string name="seehousepwd">看房密码</string>
+    <string name="opendoor">一键开门</string>
+    <string name="bluetooth">蓝牙</string>
+    <string name="power">剩余</string>
+    <string name="sendpwd">发送密码</string>
+    <string name="shouquan">授权</string>
+    <string name="managecard">卡片管理</string>
+    <string name="managepwd">密码管理</string>
+    <string name="shouquanrz">授权日志</string>
+    <string name="operationrz">操作日志</string>
+    <string name="lockname">名称</string>
+    <string name="xlh">序列号</string>
+    <string name="appversion">软件版本</string>
+    <string name="group">分组</string>
+    <string name="gateway">网关</string>
+    <string name="update">升级</string>
+    <string name="time">校对时间</string>
+    <string name="pushmsg">消息推送</string>
+    <string name="deletelock">删除设备</string>
+    <string name="useraccount">用户账号：</string>
+    <string name="tips_inputuseraccount">请输入授权用户账号</string>
+    <string name="validtime">生效时间：</string>
+    <string name="overtime">结束时间：</string>
+    <string name="auth">授权</string>
+    <string name="authuser">查看授权用户</string>
+    <string name="authusersee">授权用户</string>
+
+    <string name="allpwd">永久密码</string>
+    <string name="offlinepwd">离线密码</string>
+    <string name="zdypwd">自定义密码</string>
+    <string name="managerpwd">管理员密码</string>
+    <string name="clearpwd">清除密码</string>
+    <string name="addcard1">添加卡片</string>
+    <string name="deletecard1">删除卡片</string>
+
+    <string name="devicename">设备名称：</string>
+    <string name="devicesn">序&#160;&#160;列&#160;&#160;号：</string>
+
+    <string-array name="sendtimearray">
+        <item>@string/allpwd</item>
+        <item>@string/offlinepwd</item>
+        <item>@string/zdypwd</item>
+    </string-array>
+    <string name="connect_failed_tips">服务器连接失败,请稍后重试</string>
+    <string name="forever">永久有效</string>
+    <string name="inputadd">手动添加</string>
+    <string name="scan">扫一扫</string>
+    <string name="addblelock">添加蓝牙锁</string>
+
+    <string name="ble_not_supported">不支持蓝牙</string>
+    <string name="ble_need_location">Android6.0蓝牙需要开启</string>
+    <string name="ble_close">蓝牙已关闭，请先打开蓝牙</string>
+    <string name="tips_updateing">正在更新</string>
+    <string name="tips_searchble">正在搜索蓝牙设备</string>
+
+    <string name="lockpwd">密&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;码：</string>
+    <string name="setpwd">设置密码</string>
+    <string name="makepwd">生成</string>
+    <string name="custometips">tips:门锁离线状态下，或距离门锁较远将无法下发时效密码；断电后，需要在设置中校对时间。</string>
+    <string name="tips_dellockshow">连接删除可直接添加设备；离线删除必须对设备进行手动复位，方可添加。</string>
+    <string name="tips_connectblefailed">蓝牙连接已断开，请稍后重试</string>
+    <string name="tips_bletransfefaile">蓝牙传输异常</string>
+    <string name="intputcardname">请输入IC卡名称</string>
+    <string name="lockcardname">IC卡名称</string>
+    <string name="tips_clearallpwd">确认清除所有密码?</string>
+    <string name="tips_update">确认升级锁版本？</string>
+    <string name="tips_delicornot">确认删除该IC卡?</string>
+    <string name="tips_dellock">确认是否删除?</string>
+    <string name="tips_opendoor_success">开门成功</string>
+    <string name="tips_nolock">未找到该锁</string>
+    <string name="tips_hadlock">该锁已经绑定过，请先断开</string>
+    <string name="serach">搜索</string>
+    <string name="delallpwd">删除所有密码</string>
+    <string name="pause">暂停搜索</string>
+    <string name="deletepwd">删除密码</string>
+    <string name="authuser1">授权用户</string>
+
+    <string name="opendoortype">开门</string>
+    <string name="delpwd">删除密码</string>
+    <string name="authusername">授权用户：</string>
+
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+</resources>

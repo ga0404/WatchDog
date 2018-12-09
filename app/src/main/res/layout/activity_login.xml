@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.dodoiot.lockapp.controller.activity.LoginActivity">
+
+
+    <LinearLayout
+        android:id="@+id/layoutcontent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="@dimen/dp_20"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/account"
+            android:textColor="@color/ziclolr"
+            android:textSize="@dimen/dp_14sp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_45"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/editaccount"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="@dimen/dp_16sp"
+                android:background="@null"
+                android:hint="@string/tips_account_hint"
+                android:textColorHint="@color/silver"
+                android:textColor="@color/ziclolr"/>
+
+            <ImageView
+                android:id="@+id/clear"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:background="@mipmap/fclear"
+                android:layout_gravity="center_vertical"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+
+        <TextView
+            style="@style/hline_style"
+            android:layout_marginBottom="@dimen/dp_10"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/password"
+            android:textColor="@color/ziclolr"
+            android:textSize="@dimen/dp_14sp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_45"
+            android:orientation="horizontal">
+
+
+            <EditText
+                android:id="@+id/editpassword"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="@dimen/dp_16sp"
+                android:hint="@string/tips_password_hint"
+                android:textColorHint="@color/silver"
+                android:inputType="textPassword"
+                android:background="@null"
+                android:textColor="@color/ziclolr"/>
+
+            <ImageView
+                android:id="@+id/showpass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/fcloseeye"
+                android:layout_gravity="center_vertical"
+                android:visibility="gone"/>
+
+
+        </LinearLayout>
+        <TextView
+            style="@style/hline_style"
+            android:layout_marginBottom="@dimen/dp_10"/>
+
+        <TextView
+            android:id="@+id/tvforget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/forgetpwdtips"
+            android:textColor="@color/ziclolr"
+            android:layout_marginTop="@dimen/dp_10"
+            android:textSize="@dimen/dp_14sp"/>
+
+        <Button
+            android:id="@+id/btnlogin"
+            style="@style/btnsubmit_style"
+            android:layout_marginTop="@dimen/dp_30"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dp_18sp"
+            android:text="@string/login"
+            />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_20">
+
+
+
+            <TextView
+                android:id="@+id/tvregister"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/register"
+                android:textColor="@color/ziclolr"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="@dimen/dp_20"
+                android:textSize="@dimen/dp_16sp"/>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="@dimen/dp_20"
+        android:layout_marginBottom="30dp"
+        android:layout_above="@+id/layoutcontent"
+        android:text="@string/logintips"
+        android:textColor="@color/ziclolr"
+        android:textStyle="bold"
+        android:textSize="@dimen/dp_24sp"
+        />
+
+</RelativeLayout>

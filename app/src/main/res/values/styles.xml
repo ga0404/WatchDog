@@ -1,0 +1,163 @@
+<resources>
+
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light.NoActionBar"></style>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- Customize your theme here. -->
+        <!-- All customizations that are NOT specific to a particular API-levebtn_register_background.xmll can go here. -->
+        <item name="colorPrimary">@color/titleback</item>
+        <item name="colorPrimaryDark">@color/titleback</item>
+        <item name="colorAccent">@color/titleback</item>
+
+    </style>
+
+    <style name="CustomWindowTitleBackground">
+        <item name="android:background">@color/titleback</item>
+    </style>
+
+    <style name="heiwrap_layout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="widwrap_layout">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="wrap_layout">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="matchparent">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+
+    <style name="hline_style" parent="heiwrap_layout">
+        <item name="android:layout_height">@dimen/dp_1px</item>
+        <item name="android:background">@color/linecolor</item>
+    </style>
+
+    <style name="wline_style" parent="widwrap_layout">
+        <item name="android:layout_width">@dimen/dp_1px</item>
+        <item name="android:background">@color/linecolor</item>
+    </style>
+
+    <style name="registerline_style" parent="wline_style">
+        <item name="android:layout_width">@dimen/dp_1px</item>
+        <item name="android:layout_height">@dimen/dp_20</item>
+        <item name="android:layout_gravity">center_vertical</item>
+
+    </style>
+
+
+    <style name="height50layout_style" parent="heiwrap_layout">
+        <item name="android:layout_height">@dimen/dp_45</item>
+    </style>
+
+    <style name="btnsubmit_style" parent="heiwrap_layout">
+        <item name="android:minHeight">@dimen/dp_45</item>
+        <item name="android:background">@drawable/btnback_selector</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/dp_20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+
+    <style name="loading_dialog_style" parent="@android:style/Theme.DeviceDefault.Light.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="WWweight">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="tab_item_background1" parent="matchparent">
+        <item name="android:textSize">@dimen/dp_12sp</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/tabitem_textselector</item>
+        <item name="android:gravity">center</item>
+        <item name="android:button">@null</item>
+
+        <item name="android:layout_centerInParent">true</item>
+        <!---->
+    </style>
+
+
+    <style name="next_back_style" parent="wrap_layout">
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_marginRight">@dimen/dp_10</item>
+        <item name="android:src">@mipmap/nextback</item>
+        <item name="android:layout_width">@dimen/dp_15</item>
+        <item name="android:layout_height">@dimen/dp_25</item>
+    </style>
+
+
+    <style name="MySwitch" parent="@android:style/Widget.CompoundButton">
+        <item name="android:button">@drawable/switchbutton</item>
+    </style>
+
+    <style name="time_dialog1" parent="android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@color/white</item>
+    </style>
+
+    <style name="detailtext" parent="wrap_layout">
+        <item name="android:textSize">@dimen/dp_14sp</item>
+        <item name="android:textColor">@color/ziclolr</item>
+    </style>
+
+    <style name="detailslayout" parent="wrap_layout">
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="detailsiamge" parent="wrap_layout">
+
+    </style>
+
+    <style name="animpopup">
+        <item name="android:windowEnterAnimation">@anim/popshow_anim</item>
+        <!-- 指定显示的动画xml -->
+
+        <item name="android:windowExitAnimation">@anim/pophidden_anim</item>
+        <!-- 指定消失的动画xml -->
+    </style>
+
+    <style name="main_menu_photo_anim">
+        <item name="android:windowEnterAnimation">@anim/photo_dialog_in_anim</item>
+        <item name="android:windowExitAnimation">@anim/photo_dialog_out_anim</item>
+    </style>
+
+    <style name="FullscreenTheme" parent="AppTheme">
+        <item name="android:actionBarStyle">@style/FullscreenActionBarStyle</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="metaButtonBarStyle">?android:attr/buttonBarStyle</item>
+        <item name="metaButtonBarButtonStyle">?android:attr/buttonBarButtonStyle</item>
+    </style>
+
+    <style name="FullscreenActionBarStyle" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/black_overlay</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>
