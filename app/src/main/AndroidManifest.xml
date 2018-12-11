@@ -27,10 +27,12 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".controller.activity.MainActivity"
-            android:screenOrientation="portrait" />
+            android:label="@string/title_activity_main"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
         <activity
             android:name=".controller.activity.LoginActivity"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".controller.activity.RegisterActivity"
             android:screenOrientation="portrait" />

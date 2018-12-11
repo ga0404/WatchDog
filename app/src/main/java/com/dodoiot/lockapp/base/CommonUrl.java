@@ -2,9 +2,9 @@ package com.dodoiot.lockapp.base;
 
 public class CommonUrl {
 
-    public static String BASE_API = "https://www.dodoiot.com/app-test/smartlock/app/v1/";
+//    public static String BASE_API = "https://www.dodoiot.com/app-test/smartlock/app/v1/";
 // var BASE_API = "http://localhost:8888/smartlock/app/v1/";
-
+    public static String BASE_API = "http://47.95.201.150:8889/smartlock/app/v1/";
 
 
     public static String WxAuthorize = BASE_API + "user/wxAuthorize";

@@ -35,14 +35,14 @@ public class SplashActivity extends Activity {
 
         setContentView(R.layout.activity_splash);
 
-        String token = Gloal.m_spu_token.loadStringSharedPreference(BaseConfig.TOKEN);;
+        String token = Gloal.m_spu_token.loadStringSharedPreference(BaseConfig.TOKEN);
 
-        if(null != token && !token.equals("")){
-            toLogin();
-        }else{
+//        if(null != token && !token.equals("")){
+//            toLogin();
+//        }else{
             startActivity(new Intent(SplashActivity.this,LoginActivity.class));
             finish();
-        }
+//        }
 
     }
 
@@ -66,7 +66,7 @@ public class SplashActivity extends Activity {
 
         @Override
         public void parseResponse(String string) {
-
+            Log.e("dfc","string--------------->"+string);
             if(null != string && !string.equals("")){
                 try{
                     Log.e("dfc","string--------------->"+string);
@@ -78,8 +78,9 @@ public class SplashActivity extends Activity {
                         Gloal.m_spu_userinfo.saveSharedPreferences(BaseConfig.USERINFO,userinfo);
 //                        Gloal.m_spu_login.saveSharedPreferences(BaseConfig.PASSWORD,editpassword.getText().toString().trim());
 //                        Gloal.m_spu_login.saveSharedPreferences(BaseConfig.ACCOUNT,editaccount.getText().toString().trim());
-//                        Intent intent = new Intent(SplashActivity.this, MainActivity.class);
-//                        startActivity(intent);
+                        Intent intent = new Intent(SplashActivity.this, MainActivity.class);
+                        startActivity(intent);
+//                        Log.e("dfc","login directly and finish splash");
                         finish();
                     }else if(bean.getCode() == 100){
                         //toLogin();

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:orientation="vertical"
+    android:background="@color/backgroundcolor"
+    tools:context=".controller.activity.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/realtabcontent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"></FrameLayout>
+
+    <RadioGroup
+        android:clipChildren="false"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <!---->
+        <RelativeLayout
+            style="@style/WWweight">
+
+            <RadioButton
+                android:id="@+id/RadioButton0"
+                style="@style/tab_item_background1"
+                android:textColor="@color/tabitem_textselector"
+                android:drawableTop="@drawable/homeback_selector"
+                android:layout_marginTop="@dimen/dp_10"
+                android:text="@string/lock"
+                android:drawablePadding="@dimen/dp_3"
+                android:checked="false"
+                android:layout_centerInParent="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            style="@style/WWweight">
+
+            <RadioButton
+                android:id="@+id/RadioButton1"
+                style="@style/tab_item_background1"
+                android:textColor="@color/tabitem_textselector"
+                android:text="@string/set"
+                android:layout_marginTop="@dimen/dp_10"
+                android:drawablePadding="@dimen/dp_3"
+                android:drawableTop="@drawable/minegback_selector"
+                android:gravity="center" />
+
+        </RelativeLayout>
+    </RadioGroup>
+
+</LinearLayout>
