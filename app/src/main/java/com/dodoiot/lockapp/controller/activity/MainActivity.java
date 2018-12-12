@@ -11,7 +11,7 @@ import android.widget.FrameLayout;
 import android.widget.RadioButton;
 
 import com.dodoiot.lockapp.R;
-//import com.dodoiot.lockapp.controller.fragment.HomeFragment;
+import com.dodoiot.lockapp.controller.fragment.HomeFragment;
 //import com.dodoiot.lockapp.controller.fragment.SetFragment;
 
 import butterknife.ButterKnife;
@@ -22,7 +22,7 @@ public class MainActivity extends BaseFragmentActivity implements RadioButton.On
     private static final int TAB_MYDEVICE = 0;
     private static final int TAB_MESSAGE = 1;
 
-//    private HomeFragment homeFragment;
+    private HomeFragment homeFragment;
 //    private SetFragment setFragment;
 
     @InjectView(R.id.realtabcontent)
@@ -50,7 +50,7 @@ public class MainActivity extends BaseFragmentActivity implements RadioButton.On
         fragmentManager = getSupportFragmentManager();
         RadioButton0 = (RadioButton) findViewById(R.id.RadioButton0);
         RadioButton1 = (RadioButton) findViewById(R.id.RadioButton1);
-//        playIndex(currentindex);
+        playIndex(currentindex);
     }
 
     @Override
@@ -58,6 +58,48 @@ public class MainActivity extends BaseFragmentActivity implements RadioButton.On
         RadioButton0.setOnCheckedChangeListener(this);
         RadioButton0.setChecked(true);
         RadioButton1.setOnCheckedChangeListener(this);
+    }
+    public void playIndex(int index) {
+        Fragment newContent = null;
+        FragmentTransaction transaction = fragmentManager.beginTransaction();
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_UNSPECIFIED);
+
+        hideFragments(transaction);
+        switch (index) {
+            case TAB_MYDEVICE:
+                if (homeFragment == null) {
+                    homeFragment = new HomeFragment();
+                    transaction.add(R.id.realtabcontent, homeFragment);
+                }else{
+                }
+                newContent = homeFragment;
+                break;
+            case TAB_MESSAGE:
+//                if (setFragment == null) {
+//                    setFragment = new SetFragment();
+//                    transaction.add(R.id.realtabcontent, setFragment);
+//                }else{
+//
+//                }
+//                newContent = setFragment;
+                break;
+
+        }
+        if (newContent != null) {
+            transaction.show(newContent);
+//          transaction.addToBackStack(null);
+            transaction.commitAllowingStateLoss();
+        }
+    }
+
+    private void hideFragments(FragmentTransaction transaction) {
+        if (null != homeFragment) {
+            transaction.hide(homeFragment);
+        }
+//        if (null != setFragment) {
+//            transaction.hide(setFragment);
+//        }
+
     }
     @Override
     public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
