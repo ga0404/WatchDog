@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/titlelayout"
+    style="@style/heiwrap_layout"
+    android:layout_height="@dimen/dp_50"
+    android:background="@color/titleback">
+
+    <LinearLayout
+        android:id="@+id/leftlayout"
+        style="@style/wrap_layout"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dp_10">
+        <Button
+            android:id="@+id/btnleft"
+            style="@style/wrap_layout"
+            android:layout_width="@dimen/dp_25"
+            android:layout_height="@dimen/dp_25"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/back_arrow"
+            />
+
+
+        <Button
+            android:id="@+id/btnopertaion"
+            style="@style/wrap_layout"
+            android:layout_width="@dimen/dp_25"
+            android:layout_height="@dimen/dp_25"
+            android:layout_centerVertical="true"
+            android:visibility="gone" />
+        <!--android:background="@mipmap/left_menu"-->
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/rightlayout"
+        style="@style/wrap_layout"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/dp_10">
+
+        <Button
+            android:id="@+id/btnright"
+            style="@style/wrap_layout"
+            android:layout_width="@dimen/dp_25"
+            android:layout_height="@dimen/dp_25"
+            android:visibility="invisible"
+            />
+
+        <!-- android:background="@mipmap/pull_down"-->
+
+        <TextView
+            android:id="@+id/btnRight"
+            style="@style/wrap_layout"
+            android:textSize="@dimen/dp_16sp"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            />
+    </LinearLayout>
+
+    <RelativeLayout
+        style="@style/matchparent"
+        android:layout_centerInParent="true"
+        android:layout_toLeftOf="@+id/rightlayout"
+        android:layout_toRightOf="@+id/leftlayout">
+
+        <TextView
+            android:id="@+id/tvtitle"
+            style="@style/wrap_layout"
+            android:layout_centerInParent="true"
+            android:singleLine="true"
+            android:text="11111"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="@dimen/dp_20sp" />
+
+    </RelativeLayout>
+
+    <TextView
+        style="@style/hline_style"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>
+

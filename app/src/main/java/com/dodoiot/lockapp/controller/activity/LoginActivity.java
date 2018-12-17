@@ -164,9 +164,6 @@ public class LoginActivity extends BaseActivity {
         /**
          * 缺少 手机格式或邮箱格式 验证
          */
-
-
-
         return isEmpty;
     }
 
@@ -204,8 +201,8 @@ public class LoginActivity extends BaseActivity {
                         Gloal.m_spu_userinfo.saveSharedPreferences(BaseConfig.USERINFO,userinfo);
                         Gloal.m_spu_login.saveSharedPreferences(BaseConfig.PASSWORD,editpassword.getText().toString().trim());
                         Gloal.m_spu_login.saveSharedPreferences(BaseConfig.ACCOUNT,editaccount.getText().toString().trim());
-//                        Intent intent = new Intent(LoginActivity.this, MainActivity.class);
-//                        startActivity(intent);
+                        Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                        startActivity(intent);
                         finish();
                     }else if(bean.getCode() == 100){
                         appToast(getResources().getString(R.string.tips_login_error));
