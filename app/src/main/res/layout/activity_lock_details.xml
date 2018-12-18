@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/backgroundcolor"
+    tools:context=".controller.activity.LockDetailsActivity">
+
+    <include layout="@layout/layout_toolbartitle"></include>
+
+
+
+    <!--<ScrollView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:scrollbars="none">-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:showDividers="middle|end"
+        android:orientation="vertical"
+        android:divider="@drawable/spacer">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                style="@style/WWweight">
+                <TextView
+                    android:id="@+id/bluetooth"
+                    style="@style/detailtext"
+                    android:background="@color/white"
+                    android:drawableTop="@mipmap/ble"
+                    android:text="@string/bluetooth"
+                    android:layout_centerInParent="true"
+                    android:drawablePadding="5dp"
+                    android:gravity="center_horizontal"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/WWweight">
+                <TextView
+                    android:id="@+id/power"
+                    style="@style/detailtext"
+                    android:background="@color/white"
+                    android:drawableTop="@mipmap/power4"
+                    android:text="@string/power"
+                    android:layout_centerInParent="true"
+                    android:drawablePadding="5dp"
+                    android:gravity="center_horizontal"
+                    />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/opendoor"
+                style="@style/detailtext"
+                android:background="@color/white"
+                android:drawableTop="@mipmap/open"
+                android:text="@string/opendoor"
+                android:layout_centerInParent="true"
+                android:drawablePadding="5dp"
+                android:gravity="center_horizontal"
+                />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+
+        <LinearLayout
+            android:id="@+id/linearlayout1"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                style="@style/WWweight">
+                <TextView
+                    android:id="@+id/sendpwd"
+                    style="@style/detailtext"
+                    android:background="@color/white"
+                    android:drawableTop="@mipmap/postpwd"
+                    android:text="@string/sendpwd"
+                    android:layout_centerInParent="true"
+                    android:drawablePadding="5dp"
+                    android:gravity="center_horizontal"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/WWweight">
+                <TextView
+                    android:id="@+id/shouquan"
+                    style="@style/detailtext"
+                    android:background="@color/white"
+                    android:drawableTop="@mipmap/auth"
+                    android:text="@string/shouquan"
+                    android:layout_centerInParent="true"
+                    android:drawablePadding="5dp"
+                    android:gravity="center_horizontal"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/WWweight">
+                <TextView
+                    android:id="@+id/managecard"
+                    style="@style/detailtext"
+                    android:background="@color/white"
+                    android:drawableTop="@mipmap/idcard"
+                    android:text="@string/managecard"
+                    android:layout_centerInParent="true"
+                    android:drawablePadding="5dp"
+                    android:gravity="center_horizontal"
+                    />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/managepwdlayout"
+                style="@style/WWweight">
+                <TextView
+                    android:id="@+id/managepwd"
+                    style="@style/detailtext"
+                    android:background="@color/white"
+                    android:drawableTop="@mipmap/pwdmng"
+                    android:text="@string/managepwd"
+                    android:layout_centerInParent="true"
+                    android:drawablePadding="5dp"
+                    android:gravity="center_horizontal"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/authloglayout"
+                style="@style/WWweight">
+                <TextView
+                    android:id="@+id/shouquanrz"
+                    style="@style/detailtext"
+                    android:background="@color/white"
+                    android:drawableTop="@mipmap/authlog"
+                    android:text="@string/shouquanrz"
+                    android:layout_centerInParent="true"
+                    android:drawablePadding="5dp"
+                    android:gravity="center_horizontal"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/WWweight">
+                <TextView
+                    android:id="@+id/operationrz"
+                    style="@style/detailtext"
+                    android:background="@color/white"
+                    android:drawableTop="@mipmap/log"
+                    android:text="@string/operationrz"
+                    android:layout_centerInParent="true"
+                    android:drawablePadding="5dp"
+                    android:gravity="center_horizontal"
+                    />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/seehousepwd"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="@dimen/dp_16sp"
+                android:textColor="@color/minezicolor"
+                android:background="@color/white"
+                android:text="@string/seehousepwd"
+                android:gravity="center"
+                />
+            <TextView
+                android:id="@+id/lockset"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:textSize="@dimen/dp_16sp"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:text="@string/set"
+                android:background="@color/titleback"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <!--</ScrollView>-->
+</LinearLayout>

@@ -50,7 +50,9 @@
             android:screenOrientation="portrait" />
         <activity
             android:name=".controller.activity.LockDetailsActivity"
-            android:screenOrientation="portrait" />
+            android:label="@string/title_activity_lock_details"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
         <activity
             android:name=".controller.activity.ListCradActivity"
             android:screenOrientation="portrait" />
