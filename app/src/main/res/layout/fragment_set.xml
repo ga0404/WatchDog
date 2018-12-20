@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/backgroundcolor"
+    tools:context=".controller.fragment.SetFragment">
+
+    <include layout="@layout/layout_toolbartitle"></include>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_100"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:id="@+id/personlayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            >
+
+            <com.dodoiot.lockapp.view.CircleImageView
+                android:id="@+id/headimage"
+                android:layout_width="@dimen/dp_50"
+                android:layout_height="@dimen/dp_50"
+                android:layout_marginRight="@dimen/dp_20"
+                android:layout_alignParentRight="true"
+                android:background="@mipmap/head"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/tvphone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/minezicolor"
+                    android:textSize="@dimen/dp_24sp"
+                    android:textStyle="bold"
+                    android:text="18680677626"
+                    />
+                <TextView
+                    android:id="@+id/tvaccount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/minezicolor"
+                    android:textSize="@dimen/dp_14sp"
+                    android:text="账号:18680677626"
+                    android:visibility="gone"
+                    />
+                <TextView
+                    android:id="@+id/tips"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/defaultcolor"
+                    android:textSize="@dimen/dp_16sp"
+                    android:text="@string/tips_toseeandeditmsg"
+                    />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        style="@style/height50layout_style"
+        android:id="@+id/fendianlayout"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/setlayout_background">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/dp_16sp"
+            android:textColor="@color/minezicolor"
+            android:drawableLeft="@mipmap/fendianicon"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:drawablePadding="@dimen/dp_10"
+            android:text="@string/fendian"/>
+
+        <ImageView
+            style="@style/next_back_style" />
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        style="@style/height50layout_style"
+        android:id="@+id/exitlayout"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#ffff4444">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/dp_16sp"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:text="@string/exit"/>
+    </RelativeLayout>
+</LinearLayout>

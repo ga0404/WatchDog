@@ -12,7 +12,7 @@ import android.widget.RadioButton;
 
 import com.dodoiot.lockapp.R;
 import com.dodoiot.lockapp.controller.fragment.HomeFragment;
-//import com.dodoiot.lockapp.controller.fragment.SetFragment;
+import com.dodoiot.lockapp.controller.fragment.SetFragment;
 
 import butterknife.ButterKnife;
 import butterknife.InjectView;
@@ -23,7 +23,7 @@ public class MainActivity extends BaseFragmentActivity implements RadioButton.On
     private static final int TAB_MESSAGE = 1;
 
     private HomeFragment homeFragment;
-//    private SetFragment setFragment;
+    private SetFragment setFragment;
 
     @InjectView(R.id.realtabcontent)
     FrameLayout realtabcontent;
@@ -75,13 +75,13 @@ public class MainActivity extends BaseFragmentActivity implements RadioButton.On
                 newContent = homeFragment;
                 break;
             case TAB_MESSAGE:
-//                if (setFragment == null) {
-//                    setFragment = new SetFragment();
-//                    transaction.add(R.id.realtabcontent, setFragment);
-//                }else{
-//
-//                }
-//                newContent = setFragment;
+                if (setFragment == null) {
+                    setFragment = new SetFragment();
+                    transaction.add(R.id.realtabcontent, setFragment);
+                }else{
+
+                }
+                newContent = setFragment;
                 break;
 
         }
@@ -96,9 +96,9 @@ public class MainActivity extends BaseFragmentActivity implements RadioButton.On
         if (null != homeFragment) {
             transaction.hide(homeFragment);
         }
-//        if (null != setFragment) {
-//            transaction.hide(setFragment);
-//        }
+        if (null != setFragment) {
+            transaction.hide(setFragment);
+        }
 
     }
     @Override
@@ -112,13 +112,13 @@ public class MainActivity extends BaseFragmentActivity implements RadioButton.On
         switch (buttonView.getId()){
             case R.id.RadioButton0:
                 currentindex = 0;
-                //setTitleId(R.string.mydevice);
+//                setTitleId(R.string.mydevice);
                 break;
             case R.id.RadioButton1:
                 currentindex = 1;
-                // setTitleId(R.string.adddevice);
+//                 setTitleId(R.string.adddevice);
                 break;
         }
-//        playIndex(currentindex);
+        playIndex(currentindex);
     }
 }

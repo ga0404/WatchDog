@@ -27,8 +27,8 @@ import com.dodoiot.lockapp.controller.activity.BaseFragment;
 //import com.dodoiot.lockapp.controller.activity.InputAddActivity;
 //import com.dodoiot.lockapp.controller.activity.LockListActivity;
 //import com.dodoiot.lockapp.controller.adapter.MyPageAdapter;
-//import com.dodoiot.lockapp.model.DeviceListBean;
-//import com.dodoiot.lockapp.model.GroupDeviceListBean;
+import com.dodoiot.lockapp.model.DeviceListBean;
+import com.dodoiot.lockapp.model.GroupDeviceListBean;
 //import com.dodoiot.lockapp.model.GroupListBean;
 import com.dodoiot.lockapp.net.IResponseParser;
 import com.dodoiot.lockapp.net.RequestManager;
@@ -75,8 +75,8 @@ public class HomeFragment extends BaseFragment {
 
 
 //    MyPageAdapter adapter;
-//    GroupDeviceListBean groupDeviceListBean;
-//    List<DeviceListBean> list = new ArrayList<>();
+    GroupDeviceListBean groupDeviceListBean;
+    List<DeviceListBean> list = new ArrayList<>();
 //    List<LockFragment> listFragment = new ArrayList<>();
     ProgressDialog mTipDlg;
     String branchMsg;
@@ -101,7 +101,7 @@ public class HomeFragment extends BaseFragment {
 //        adapter = new MyPageAdapter(getChildFragmentManager(),list,listFragment);
 //        viewpager.setAdapter(adapter);
 //        slidinglayout.setViewPager(viewpager);
-        //loadData();
+//        loadData();
     }
 
     @Override
@@ -141,43 +141,43 @@ public class HomeFragment extends BaseFragment {
             if(null != string && !string.equals("")){
                 {
                     Log.e("dfc","string---homeFragment--->"+string);
-//                    GroupDeviceListBean bean = JsonUtils.getGson().fromJson(string,GroupDeviceListBean.class);
-//                    if(bean.getCode() == 0){
-//                        branchMsg = string;
-//                        if(list.size()>0){
-//                            list.clear();
-//                            list.addAll(bean.getGrouplist());
+                    GroupDeviceListBean bean = JsonUtils.getGson().fromJson(string,GroupDeviceListBean.class);
+                    if(bean.getCode() == 0){
+                        branchMsg = string;
+                        if(list.size()>0){
+                            list.clear();
+                            list.addAll(bean.getGrouplist());
 //                            listFragment.clear();
 //                            for(int i=0;i<bean.getGrouplist().size();i++){
 //                                listFragment.add(LockFragment.newStances(i,string,list.get(i)));
 //                            }
 ////                            adapter.addAll(bean.getGrouplist());
 //                            adapter.notifyDataSetChanged();
-//                            String[] ss = new String[list.size()];
-//                            for(int i=0;i<list.size();i++){
-//                                ss[i] = list.get(i).getName();
-//                            }
-//                            slidinglayout.setViewPager(viewpager,ss);
-//                        }else{
-//                            list.clear();
-//                            list.addAll(bean.getGrouplist());
-//                            for(DeviceListBean b:bean.getGrouplist()){
+                            String[] ss = new String[list.size()];
+                            for(int i=0;i<list.size();i++){
+                                ss[i] = list.get(i).getName();
+                            }
+                            slidinglayout.setViewPager(viewpager,ss);
+                        }else{
+                            list.clear();
+                            list.addAll(bean.getGrouplist());
+                            for(DeviceListBean b:bean.getGrouplist()){
 //                                listFragment.add(new LockFragment());
-//                            }
+                            }
 //                            adapter = new MyPageAdapter(getChildFragmentManager(),list,listFragment,string);
-////                      viewpager.setOffscreenPageLimit(3);
+//                      viewpager.setOffscreenPageLimit(3);
 //                            viewpager.setAdapter(adapter);
-//                            String[] ss = new String[list.size()];
-//                            for(int i=0;i<list.size();i++){
-//                                ss[i] = list.get(i).getName();
-//                            }
-//                            slidinglayout.setViewPager(viewpager,ss);
-//                            //slidinglayout.setViewPager(viewpager);
-//                        }
-//
-//                        groupDeviceListBean = bean;
-//                        Log.e("dfc","currentiten------->"+viewpager.getCurrentItem());
-//                    }
+                            String[] ss = new String[list.size()];
+                            for(int i=0;i<list.size();i++){
+                                ss[i] = list.get(i).getName();
+                            }
+                            slidinglayout.setViewPager(viewpager,ss);
+                            //slidinglayout.setViewPager(viewpager);
+                        }
+
+                        groupDeviceListBean = bean;
+                        Log.e("dfc","currentiten------->"+viewpager.getCurrentItem());
+                    }
                 }
             }else{
 
