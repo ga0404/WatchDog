@@ -26,7 +26,7 @@ import com.dodoiot.lockapp.base.Gloal;
 import com.dodoiot.lockapp.controller.activity.BaseFragment;
 //import com.dodoiot.lockapp.controller.activity.InputAddActivity;
 //import com.dodoiot.lockapp.controller.activity.LockListActivity;
-//import com.dodoiot.lockapp.controller.adapter.MyPageAdapter;
+import com.dodoiot.lockapp.controller.adapter.MyPageAdapter;
 import com.dodoiot.lockapp.model.DeviceListBean;
 import com.dodoiot.lockapp.model.GroupDeviceListBean;
 //import com.dodoiot.lockapp.model.GroupListBean;
@@ -74,10 +74,10 @@ public class HomeFragment extends BaseFragment {
     ViewPager viewpager;
 
 
-//    MyPageAdapter adapter;
+    MyPageAdapter adapter;
     GroupDeviceListBean groupDeviceListBean;
     List<DeviceListBean> list = new ArrayList<>();
-//    List<LockFragment> listFragment = new ArrayList<>();
+    List<LockFragment> listFragment = new ArrayList<>();
     ProgressDialog mTipDlg;
     String branchMsg;
     @Override
@@ -147,12 +147,12 @@ public class HomeFragment extends BaseFragment {
                         if(list.size()>0){
                             list.clear();
                             list.addAll(bean.getGrouplist());
-//                            listFragment.clear();
-//                            for(int i=0;i<bean.getGrouplist().size();i++){
-//                                listFragment.add(LockFragment.newStances(i,string,list.get(i)));
-//                            }
-////                            adapter.addAll(bean.getGrouplist());
-//                            adapter.notifyDataSetChanged();
+                            listFragment.clear();
+                            for(int i=0;i<bean.getGrouplist().size();i++){
+                                listFragment.add(LockFragment.newStances(i,string,list.get(i)));
+                            }
+//                            adapter.addAll(bean.getGrouplist());
+                            adapter.notifyDataSetChanged();
                             String[] ss = new String[list.size()];
                             for(int i=0;i<list.size();i++){
                                 ss[i] = list.get(i).getName();
@@ -162,11 +162,11 @@ public class HomeFragment extends BaseFragment {
                             list.clear();
                             list.addAll(bean.getGrouplist());
                             for(DeviceListBean b:bean.getGrouplist()){
-//                                listFragment.add(new LockFragment());
+                                listFragment.add(new LockFragment());
                             }
-//                            adapter = new MyPageAdapter(getChildFragmentManager(),list,listFragment,string);
+                            adapter = new MyPageAdapter(getChildFragmentManager(),list,listFragment,string);
 //                      viewpager.setOffscreenPageLimit(3);
-//                            viewpager.setAdapter(adapter);
+                            viewpager.setAdapter(adapter);
                             String[] ss = new String[list.size()];
                             for(int i=0;i<list.size();i++){
                                 ss[i] = list.get(i).getName();

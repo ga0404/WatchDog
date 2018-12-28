@@ -89,7 +89,6 @@
 
 
         <LinearLayout
-            android:id="@+id/linearlayout1"
             android:layout_width="match_parent"
             android:layout_height="90dp"
             android:background="@color/white"
@@ -147,7 +146,6 @@
             android:orientation="horizontal">
 
             <RelativeLayout
-                android:id="@+id/managepwdlayout"
                 style="@style/WWweight">
                 <TextView
                     android:id="@+id/managepwd"
@@ -162,7 +160,6 @@
             </RelativeLayout>
 
             <RelativeLayout
-                android:id="@+id/authloglayout"
                 style="@style/WWweight">
                 <TextView
                     android:id="@+id/shouquanrz"
@@ -206,7 +203,7 @@
                 android:id="@+id/seehousepwd"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
+                android:layout_weight="2"
                 android:textSize="@dimen/dp_16sp"
                 android:textColor="@color/minezicolor"
                 android:background="@color/white"
@@ -217,7 +214,7 @@
                 android:id="@+id/lockset"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="2"
+                android:layout_weight="4"
                 android:textSize="@dimen/dp_16sp"
                 android:textColor="@color/white"
                 android:gravity="center"
