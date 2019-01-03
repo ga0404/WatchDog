@@ -442,11 +442,11 @@ public class LockDetailsActivity extends BaseActivity implements BaseNotifyListe
     }
 
     private void toSendPWd(){
-//        Intent intent = new Intent(LockDetailsActivity.this,SendPwdActivity.class);
-//        Bundle bundle = new Bundle();
-//        bundle.putSerializable("bean",bean);
-//        intent.putExtras(bundle);
-//        startActivity(intent);
+        Intent intent = new Intent(LockDetailsActivity.this,SendPwdActivity.class);
+        Bundle bundle = new Bundle();
+        bundle.putSerializable("bean",bean);
+        intent.putExtras(bundle);
+        startActivity(intent);
     }
 
     private void toManagePWd(){
