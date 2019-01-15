@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundcolor"
+    android:orientation="vertical"
+    tools:context=".controller.fragment.PermanentFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:showDividers="middle|end"
+        android:orientation="vertical"
+        android:divider="@drawable/spacer">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_45"
+            android:background="@color/white"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lockpwd"
+                android:textColor="@color/ziclolr"
+                android:layout_marginLeft="10dp"
+                android:textSize="@dimen/dp_16sp"/>
+
+            <EditText
+                android:id="@+id/editpwd"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="@dimen/dp_16sp"
+                android:gravity="center_vertical"
+                android:hint="@string/password"
+                android:layout_marginRight="15dp"
+                android:textColorHint="@color/silver"
+                android:background="@null"
+                android:textColor="@color/ziclolr"/>
+
+            <Button
+                android:id="@+id/getCode"
+                style="@style/btnsubmit_style"
+                android:layout_width="60dp"
+                android:layout_height="35dp"
+                android:layout_centerVertical="true"
+                android:textColor="@color/white"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/btnback_selector"
+                android:textSize="@dimen/dp_16sp"
+                android:text="@string/getcode"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -231,6 +231,7 @@ public class CustomFragment extends BaseFragment implements BaseNotifyListener.D
             timeSelector = new TimeSelector(getActivity(), new TimeSelector.ResultHandler() {
                 @Override
                 public void handle(String time) {
+                    Log.e("dfc","TimeSelector-------"+time);
                     if (showType == 0) {
                         tvstarttime.setText(time);
                     } else {

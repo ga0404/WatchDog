@@ -79,7 +79,9 @@
             android:screenOrientation="portrait" />
         <activity
             android:name=".controller.activity.SendPwdActivity"
-            android:screenOrientation="portrait" />
+            android:label="@string/title_activity_send_pwd"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
         <activity
             android:name=".controller.activity.ManagePwdActivity"
             android:screenOrientation="portrait" />

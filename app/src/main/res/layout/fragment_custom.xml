@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/backgroundcolor"
+    tools:context=".controller.fragment.OffLineFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:showDividers="middle|end"
+        android:orientation="vertical"
+        android:divider="@drawable/spacer">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_45"
+            android:background="@color/white"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lockpwd"
+                android:textColor="@color/ziclolr"
+                android:layout_marginLeft="10dp"
+                android:textSize="@dimen/dp_16sp"/>
+
+            <EditText
+                android:id="@+id/editpwd"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="@dimen/dp_16sp"
+                android:gravity="center_vertical"
+                android:hint="@string/password"
+                android:layout_marginRight="15dp"
+                android:textColorHint="@color/silver"
+                android:background="@null"
+                android:textColor="@color/ziclolr"/>
+            <Button
+                android:id="@+id/getCode"
+                style="@style/btnsubmit_style"
+                android:layout_width="60dp"
+                android:layout_height="35dp"
+                android:layout_centerVertical="true"
+                android:textColor="@color/white"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/btnback_selector"
+                android:textSize="@dimen/dp_16sp"
+                android:text="@string/makepwd"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/height50layout_style"
+            android:layout_height="45dp"
+            android:id="@+id/starttimelayout"
+            android:orientation="horizontal"
+            android:background="@drawable/setlayout_background">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/dp_16sp"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:textColor="@color/ziclolr"
+                android:text="@string/validtime"/>
+
+
+            <TextView
+                android:id="@+id/tvstarttime"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="@color/ziclolr"
+                android:textSize="@dimen/dp_16sp"
+                android:background="@null"
+                android:gravity="center"
+                android:text=""/>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/height50layout_style"
+            android:layout_height="45dp"
+            android:id="@+id/endtimelayout"
+            android:orientation="horizontal"
+            android:background="@drawable/setlayout_background">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/dp_16sp"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:textColor="@color/ziclolr"
+                android:text="@string/overtime"/>
+
+
+
+            <TextView
+                android:id="@+id/tvendtime"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="@color/ziclolr"
+                android:textSize="@dimen/dp_16sp"
+                android:background="@null"
+                android:gravity="center"
+                android:text="2018-11-22"/>
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textSize="14sp"
+            android:textColor="@color/silver"
+            android:text="@string/custometips"/>
+
+        <Button
+            android:id="@+id/btnsetpwd"
+            style="@style/btnsubmit_style"
+            android:layout_marginTop="@dimen/dp_20"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dp_18sp"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_10"
+            android:text="@string/setpwd"
+            android:background="@drawable/btn_register_background1"
+            />
+    </LinearLayout>
+
+</LinearLayout>
